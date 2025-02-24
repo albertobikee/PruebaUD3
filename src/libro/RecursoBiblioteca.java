@@ -1,5 +1,12 @@
 package libro;
 
+/** 
+ * Superclase que utiliza los atributos prestado y autor de la clase Libro.
+ * 
+ * @author Alberto Hernández
+ * @version 1.0
+ * @since 2025
+ * */
 public class RecursoBiblioteca {
 
 	protected boolean prestado;
@@ -14,7 +21,7 @@ public class RecursoBiblioteca {
 	}
 
 	public int getAñoPublicacion() {
-		return añoPublicacion;
+		return getAñoPublicacion();
 	}
 
 	protected void setAñoPublicacion(int añoPublicacion, Libro libro) {
@@ -22,7 +29,7 @@ public class RecursoBiblioteca {
 	}
 
 	public String getTitulo() {
-		return titulo;
+		return getTitulo();
 	}
 
 	protected void setTitulo(String titulo, Libro libro) {

@@ -1,7 +1,14 @@
 package libro;
 
-//Clase que representa un libro en la biblioteca
+/** 
+ * Clase que representa un libro en la biblioteca.
+ * 
+ * @author Alberto Hernández
+ * @version 1.0
+ * @since 2025
+ * */
 public class Libro extends RecursoBiblioteca {
+	
  String titulo;
  int añoPublicacion;
  public String ISBN;
@@ -15,18 +22,37 @@ public class Libro extends RecursoBiblioteca {
      this.setPrestado(false, this);
  }
 
+ /** 
+  * 
+  * Este método pronto dejará de utilizarse...
+  * 
+  * @deprecated 
+  * 
+  * */
  public void prestar() {
+	 /** 
+	  * 
+	  * @param args
+	  * @return
+	  * 
+	  * */
      if (!isPrestado()) {
-         setPrestado(true);
+         setPrestado(true, null);
          System.out.println(getTitulo() + " ha sido prestado.");
      } else {
          System.out.println(getTitulo() + " ya está prestado.");
      }
  }
 
+
  public void devolver() {
+	 /** 
+	  * 
+	  * @return
+	  * 
+	  * */
      if (isPrestado()) {
-         setPrestado(false);
+         setPrestado(false, null);
          System.out.println(getTitulo() + " ha sido devuelto.");
      } else {
          System.out.println(getTitulo() + " no estaba prestado.");
@@ -34,6 +60,11 @@ public class Libro extends RecursoBiblioteca {
  }
 
 private boolean isPrestado() {
+	 /** 
+	  * 
+	  * @return
+	  * 
+	  * */
 	return prestado;
 }
 }

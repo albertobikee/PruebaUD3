@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"libro","c":"RecursoBiblioteca","l":"autor"},{"p":"libro","c":"RecursoBiblioteca","l":"getAñoPublicacion()","u":"getA%C3%B1oPublicacion()"},{"p":"libro","c":"RecursoBiblioteca","l":"getTitulo()"},{"p":"libro","c":"RecursoBiblioteca","l":"RecursoBiblioteca()","u":"%3Cinit%3E()"}];updateSearchResults();

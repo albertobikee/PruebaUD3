@@ -4,7 +4,19 @@ import java.util.Scanner;
 
 import libro.Libro;
 
+/** 
+ * Clase principal del proyecto.
+ * 
+ * @author Alberto Hernández
+ * @version 1.0
+ * @since 2025
+ * */
 public class Main {
+    /**
+     * Método principal que ejecuta el programa de la biblioteca.
+     * 
+     * @param args
+     */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
