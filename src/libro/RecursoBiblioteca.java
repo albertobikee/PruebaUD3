@@ -9,12 +9,12 @@ public class RecursoBiblioteca {
 		super();
 	}
 
-	protected void setPrestado(boolean prestado, RecursoBiblioteca libro) {
+	protected void setPrestado(boolean prestado) {
 		this.prestado = prestado;
 	}
 
 	public int getAñoPublicacion() {
-		return añoPublicacion;
+		return getAñoPublicacion();
 	}
 
 	protected void setAñoPublicacion(int añoPublicacion, Libro libro) {
@@ -22,7 +22,7 @@ public class RecursoBiblioteca {
 	}
 
 	public String getTitulo() {
-		return titulo;
+		return getTitulo();
 	}
 
 	protected void setTitulo(String titulo, Libro libro) {

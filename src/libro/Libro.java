@@ -12,7 +12,7 @@ public class Libro extends RecursoBiblioteca {
      this.setAñoPublicacion(anioPublicacion, this);
      this.ISBN=ISBN;
      this.genero=genero;
-     this.setPrestado(false, this);
+     this.setPrestado(false);
  }
 
  public void prestar() {
