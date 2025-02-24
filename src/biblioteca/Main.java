@@ -1,6 +1,8 @@
-package paquete;
+package biblioteca;
 
 import java.util.Scanner;
+
+import libro.Libro;
 
 public class Main {
     public static void main(String[] args) {

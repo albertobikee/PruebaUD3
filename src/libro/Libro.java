@@ -1,4 +1,4 @@
-package paquete;
+package libro;
 
 //Clase que representa un libro en la biblioteca
 public class Libro {
