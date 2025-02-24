@@ -1,36 +1,39 @@
 package libro;
 
 //Clase que representa un libro en la biblioteca
-public class Libro {
- public String titulo;
- public int anioPublicacion;
+public class Libro extends RecursoBiblioteca {
+ String titulo;
+ int añoPublicacion;
  public String ISBN;
  public String genero;
- public boolean prestado;
-
  public Libro(String titulo, int anioPublicacion, String ISBN,String genero) {
-     this.titulo = titulo;
-     this.anioPublicacion = anioPublicacion;
+     super();
+	this.setTitulo(titulo, this);
+     this.setAñoPublicacion(anioPublicacion, this);
      this.ISBN=ISBN;
      this.genero=genero;
-     this.prestado=false;
+     this.setPrestado(false, this);
  }
 
  public void prestar() {
-     if (!prestado) {
-         prestado = true;
-         System.out.println(titulo + " ha sido prestado.");
+     if (!isPrestado()) {
+         setPrestado(true);
+         System.out.println(getTitulo() + " ha sido prestado.");
      } else {
-         System.out.println(titulo + " ya está prestado.");
+         System.out.println(getTitulo() + " ya está prestado.");
      }
  }
 
  public void devolver() {
-     if (prestado) {
-         prestado = false;
-         System.out.println(titulo + " ha sido devuelto.");
+     if (isPrestado()) {
+         setPrestado(false);
+         System.out.println(getTitulo() + " ha sido devuelto.");
      } else {
-         System.out.println(titulo + " no estaba prestado.");
+         System.out.println(getTitulo() + " no estaba prestado.");
      }
  }
+
+private boolean isPrestado() {
+	return prestado;
+}
 }

@@ -23,8 +23,8 @@ public class Main {
         Libro libro = new Libro(titulo, anioPublicacion,ISBN, genero);
         
         System.out.println("\nDetalles del libro:");
-        System.out.println("Título: " + libro.titulo);
-        System.out.println("Año de publicación: " + libro.anioPublicacion);
+        System.out.println("Título: " + libro.getTitulo());
+        System.out.println("Año de publicación: " + libro.getAñoPublicacion());
         System.out.println("ISBN: " + libro.ISBN);
         System.out.println("Género: " + libro.genero);
         
