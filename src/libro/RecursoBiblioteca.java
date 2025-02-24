@@ -16,7 +16,7 @@ public class RecursoBiblioteca {
 		super();
 	}
 
-	protected void setPrestado(boolean prestado, RecursoBiblioteca libro) {
+	protected void setPrestado(boolean prestado) {
 		this.prestado = prestado;
 	}
 
